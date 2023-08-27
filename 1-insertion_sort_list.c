@@ -12,7 +12,7 @@ void insertion_sort_list(listint_t **list)
 	noodle = (*list)->next;
 	while (noodle)
 	{
-		while ((noodle->prev) && (noodle->prev->n > node->n))
+		while ((noodle->prev) && (noodle->prev->n > noodle->n))
 		{
 			noodle = swap_node(noodle, list);
 			print_list(*list);
